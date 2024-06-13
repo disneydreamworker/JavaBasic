@@ -37,5 +37,25 @@ public class VDATest2 {
         double d3 = 5e2; // 5.0 * e(10의 2승) = 500.0
         double d4 = 0.12E-2; // 0.12 * e(10의 -2승) = 0.0012
 
+        // Boolean
+            // 조건문, 제어문의 실행 흐름을 제어하는데 사용
+            // 연산식에서 비교 및 논리 연산의 산출값을 검증할때 사용
+        boolean stop = true;
+        stop = false;
+        System.out.println(stop);
+
+        int x2 = 30;
+
+        // 변수 x2의 값이 20인가?
+        boolean result = (x2 == 20);
+        // 변수 x2의 값이 20이 아닌가?
+        result = (x2 != 20);
+        // 변수 x2의 값이 20보다 큰가?
+        result = (x2 > 20);
+        // 변수 x2의 값이 0보다 크고 20보다 작은가?
+        result = (0 < x2 && x2 < 20);
+        // 변수 x2의 값이 0보다 작거나 20보다 큰가?
+        result = (0 > x2 || x2 > 20);
+
     }
 }
