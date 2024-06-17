@@ -44,5 +44,29 @@ public class CastingEx {
         String op3 = 4 + 5 + "0"; //9 + "0" => 90 출력
         String op4 = "1" + (4 + 5); // 괄호 먼저 수행 후 "1" 결합 => 19 출력
         System.out.println(op4);
+
+        //String을 기본 타입으로 변환하기
+        int parseInt = Integer.parseInt("5000");
+        System.out.println(parseInt);
+        double parseDouble = Double.parseDouble("8.2923");
+        System.out.println(parseDouble);
+
+        //기본 타입을 String으로 변환하기
+        String str1 = String.valueOf(700);
+        String str2 = String.valueOf(700.00);
+        String str3 = String.valueOf(true);
+        String str4 = String.valueOf('P');
+        System.out.printf("%s\n%s\n%s\n%s\n", str1, str2, str3, str4);
+
+
+        // 메소드 블록 유효범위
+        int calculator = calculator(300,400);
+        System.out.println(calculator);
+    }
+        // 메소드 내부 변수 : 메소드 내 선언 변수는 매소드 내만 유효
+    public static int calculator (int n1, int n2) {
+        int result = n1  =n2;
+        System.out.printf("%d + %d 의 결과는 %d", n1, n2, result);
+        return result;
     }
 }
