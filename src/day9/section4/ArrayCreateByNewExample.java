@@ -1,7 +1,5 @@
 package day9.section4;
 
-import java.util.Scanner;
-
 public class ArrayCreateByNewExample {
 
   public static void main(String[] args) {
