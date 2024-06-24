@@ -1,33 +1,49 @@
 package day9.section3;
 
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
 public class IndexOfContainsExample {
 
   public static void main(String[] args) {
     String subject = "자바 객체 프로그래밍 과목입니다.";
 
-    //1. 객체 프로그래밍만 추출하여 출력
-    System.out.println(subject.substring(3, 11));
+    //1 문제에서 "객체 프로그래밍" 문자열을 추출하여 저장하여 출력하세요.
+    String[] result1 = subject.split("");
 
-    //2. 프로그래밍 인덱스 저장하여 "프로그래밍 과목입니다" 출력
-    int firstIndex = subject.indexOf("프");
-    System.out.println(subject.substring(firstIndex));
+    for (int i = subject.indexOf("객"); i <= subject.indexOf("밍"); i++) {
+      System.out.print(result1[i]);
+    }
+    System.out.println();
+    //1.1
+    String str1 = subject.substring(subject.indexOf('객'), subject.indexOf('밍') + 1);
+    System.out.println(str1);
 
-    //3. 문자열에 "자바" 문자열이 있는 지 판별하기
-    String java = "자바";
-    String[] arr = subject.split(" ");
-    boolean isJava = checkJava(java, arr);
-    System.out.println(isJava ? "자바 관련 과목이군요!" : "자바와 관련 없는 과목이군요!");
-
-    //4.  문자열에 "자바" 문자열이 포함 돼 있는 지 판별하기
-    System.out.println(subject.contains(java) ? "자바 관련 과목이군요!" : "자바와 관련 없는 과목이군요!");
-  }
-
-  public static boolean checkJava(String java, String arr[]) {
-    for (String s : arr) {
-      if (java.equals(s)) {
-        return true;
+    //2. subject 문자열에서 "프로그래밍" 문자열의 첫 인덱스를 저장하여 "프로그래밍 과목입니다." 문자열을 추출하여 출력하세요.
+    String str2 = subject.substring(subject.indexOf("프"));
+    System.out.println(str2);
+    
+    //3. subject 문자열에서 "자바" 문자열이 있으면 " 자바 관련 과목이군요!" 출력, 없으면 "자바와 관련 없는 과목이군요" 출력
+    StringTokenizer st = new StringTokenizer(subject);
+    boolean b = false;
+    while (st.hasMoreTokens()) {
+      if (st.nextToken().equals("자바")) {
+        b = true;
       }
     }
-    return false;
+    if (b) {
+      System.out.println("자바 관련 과목이군요!");
+    } else {
+      System.out.println("자바와 관련 없는 과목이군요.");
+    }
+
+    //3.1
+    if (subject.contains("자바")) {
+      System.out.println("자바 관련 과목이군요!");
+    } else {
+      System.out.println("자바와 관련 없는 과목이군요.");
+    }
+
+    //4.
   }
 }
