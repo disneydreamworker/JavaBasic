@@ -14,5 +14,9 @@ public class BookTest {
 
         System.out.println(title+"/t"+price+"/t"+company+"/t"+author+"/t"+page+"/t"+isbn);
 
+        while (true) {
+            title = "";
+
+        }
     }
 }
