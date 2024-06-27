@@ -10,8 +10,12 @@ public class Account {
   }
   
   public void deposit(int dep) {
+    if (dep > this.balance) {
+      System.out.println("잔고가 부족합니다. 출금 요청이 취소됩니다.");
+    } else {
     this.balance -= dep;
     System.out.println(accNo + " 계좌에 " + dep + "만원이 출금되었습니다.");
+    }
   }
   public String getAccNo() {
     return accNo;

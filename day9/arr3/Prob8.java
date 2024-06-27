@@ -1,2 +1,5 @@
-package day9.arr3;public class Prob8 {
+package day9.arr3;
+
+public class Prob8 {
+
 }
