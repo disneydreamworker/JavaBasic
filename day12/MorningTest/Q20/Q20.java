@@ -101,18 +101,4 @@ public class Q20 {
     }
     return null;
   }
-
-  void exec1(int cnt, AccountBank accountBank) {
-    if (cnt >= 100) {
-      System.out.println("더 이상 계좌를 생성할 수 없습니다.");
-    }
-    try {
-      accountBank.account[cnt] = main.createAcc(); //AccountBank 객체 생성한거를 담아준다
-      System.out.println("결과 : 계좌가 생성되었습니다.");
-      cnt++;
-    } catch (Exception e) {
-      System.out.println("결과 : 계좌 생성이 실패했습니다.");
-    }
-  }
-
 }
