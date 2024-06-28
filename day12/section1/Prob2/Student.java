@@ -27,13 +27,13 @@ public class Student {
     } else {
       System.out.println("그런 과정명은 없습니다.");
     }
-  };
+  }
 
   public void print(){
     System.out.printf("%s 씨의 과정명은 %s 이고 교육비는 %d 이며 환급금은 %.1f 입니다.", this.name, this.subject, this.fee, this.returnFee);
   }
 
-  public static void main(String args[]){
+  public static void main(String[] args) {
     Student stu = new Student("차은우", "jspprogram",
         500000);
     stu.calcReturnFee();
