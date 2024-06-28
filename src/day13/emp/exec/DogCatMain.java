@@ -12,16 +12,21 @@ public class DogCatMain {
 
     Cat cat = new Cat();
     cat.eat();
+    cat.night();
 
     Animal x = new Cat();
     x.eat();
+    Cat cat1 = (Cat) x;
+    cat1.night();
 
     x = new Dog();
     x.eat();
 
-    Animal dog1 = new Cat();
-    dog1.eat();
-    
+    Animal cat2 = new Cat();
+    cat2.eat();
+    cat2 = (Cat) cat2;
+    ((Cat) cat2).night();
+
 
   }
 
