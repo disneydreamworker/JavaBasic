@@ -2,6 +2,8 @@ package day13.emp.vo;
 
 public class Animal extends Object {
 
+  protected int age = 10;
+
   public Animal() {
     super();    //new Object;
   }

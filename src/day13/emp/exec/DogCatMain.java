@@ -18,6 +18,11 @@ public class DogCatMain {
 
     x = new Dog();
     x.eat();
+
+    Animal dog1 = new Cat();
+    dog1.eat();
+    
+
   }
 
 }
