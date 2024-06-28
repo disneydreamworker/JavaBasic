@@ -6,12 +6,6 @@ public class Student {
   private int fee;
   private double returnFee;
 
-
-  protected static int a;
-  private static int b;
-  public static int c;
-
-
 ///////constructor////////
   public Student(String name, String subject, int fee){
     this.name = name;
