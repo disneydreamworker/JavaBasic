@@ -9,24 +9,13 @@ public class Alcohol extends Drink {
     this.alcper = alcper;
   }
 
-  @Override
-  public void printTitle() {
+  public static void printTitle() {
     System.out.println("상품명(도수[%])\t\t단가\t\t수량\t\t금액");
   }
 
-  @Override
   public void printData() {
     System.out.println(
         super.getName() + "(" + alcper + ")   " + super.getPrice() + "  " + super.getCount() + "  "
             + super.getTotalPrice());
-  }
-
-  ///////////////////////////
-  public double getAlcper() {
-    return alcper;
-  }
-
-  public void setAlcper(double alcper) {
-    this.alcper = alcper;
   }
 }

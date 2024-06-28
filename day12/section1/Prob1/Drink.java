@@ -1,17 +1,20 @@
 package day12.section1.Prob1;
 
 public class Drink {
-private String name;
-private int price;
-private int count;
+  ///////Field////////
+  private String name;
+  private int price;
+  private int count;
 
+  //////Constructor////////
   public Drink(String name, int price, int count) {
     this.name = name;
     this.price = price;
     this.count = count;
   }
 
-  public void printTitle() {
+  ///////Method////////
+  public static void printTitle() {
     System.out.println("상품명\t\t단가\t\t수량\t\t금액");
   }
 
@@ -19,11 +22,13 @@ private int count;
     int totalPrice = price * count;
     return totalPrice;
   }
+
   public void printData() {
     int totalPrice = getTotalPrice();
     System.out.println(name + "  " + price + "  " + count + "  " + totalPrice);
   }
 
+  /////////////Getters&Setters//////////////
   public String getName() {
     return name;
   }

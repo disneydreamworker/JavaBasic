@@ -9,12 +9,12 @@ public class Prob1 {
     Alcohol wine = new Alcohol("와인", 5000, 3, 15.1);
 
     System.out.println("***** 매 출 전 표 ***** ");
-//    Drink.printTitle();
+    Drink.printTitle();
     coffee.printData();
     tea.printData();
     System.out.println();
 
-//    Alcohol.printTitle();
+    Alcohol.printTitle();
     wine.printData();
 
     int sum = coffee.getTotalPrice()
