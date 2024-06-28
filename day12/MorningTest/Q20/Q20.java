@@ -176,6 +176,4 @@ public class Q20 {
     System.out.print("계좌번호: ");
     return s.nextLine();
   }
-
-
 }
