@@ -1,4 +1,4 @@
-package day14.section11.practice1;
+package day14.section1.practice1;
 
 public abstract class Shape {
   protected double area;

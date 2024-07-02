@@ -1,4 +1,4 @@
-package day14.section11.practice3;
+package day14.section1.practice3;
 
 public abstract class Content {
   private String title;

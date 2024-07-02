@@ -1,4 +1,4 @@
-package day14.section11.assignment;
+package day14.section1.assignment;
 
 public class Bike extends Wheeler{
   public Bike(int velocity, String carName, int wheelNumber) {

@@ -1,4 +1,4 @@
-package day14.section11.practice2_2;
+package day14.section1.practice2_2;
 
 public class Tea extends Beverage {
   static int amount;

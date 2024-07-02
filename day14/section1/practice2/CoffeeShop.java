@@ -1,7 +1,7 @@
-package day14.section11.practice2_2;
+package day14.section1.practice2;
 
-import static day14.section11.practice2_2.Beverage.getSalesInfo;
-import static day14.section11.practice2_2.Beverage.getTotalPrice;
+import static day14.section1.practice2.Beverage.getSalesInfo;
+import static day14.section1.practice2.Beverage.getTotalPrice;
 
 public class CoffeeShop {
 
@@ -16,7 +16,7 @@ public class CoffeeShop {
     getSalesInfo(beverage);
 
     System.out.println("총 판매 금액==>"+getTotalPrice(beverage));
-    System.out.println("Coffee의 판매 개수=>"+ Coffee.amount+"잔");
-    System.out.println("Tea의 판매 개수=>"+ Tea.amount+"잔");
+    System.out.println("Coffee의 판매 개수=>"+Coffee.amount+"잔");
+    System.out.println("Tea의 판매 개수=>"+Tea.amount+"잔");
   }
 }

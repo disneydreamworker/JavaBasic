@@ -1,4 +1,4 @@
-package day14.section11.practice;
+package day14.section1.practice;
 
 public class Cat extends Animal{
 
