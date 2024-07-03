@@ -1,8 +1,5 @@
 package day15.assignment1;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-
 public class AnimalTest {
 
   public static int cnt = 1;
@@ -12,8 +9,14 @@ public class AnimalTest {
       System.out.println(cnt+"시간 후");
       Animal dog = new Dog(8);
       Animal chicken = new Chicken(3);
+      Chicken cheatableChicken = new Chicken(5);
       cnt++;
+
+      if (cheatableChicken instanceof Cheatable) {
+        cheatableChicken.fly();
+      }
     }
+
   }
 }
 
