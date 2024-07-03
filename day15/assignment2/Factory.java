@@ -17,7 +17,7 @@ public abstract class Factory {
   }
 
   public int getWorkingTime() {
-    return 0;
+    return closeHour-openHour;
   }
 
   public abstract int makeProducts(char skill);
