@@ -46,8 +46,8 @@ public class JdbcEx {
       con = DriverManager.getConnection(url,userName,password);
       System.out.println(con);
       pstmt = con.prepareStatement(query);
-      pstmt.setInt(1, 5);
-      pstmt.setString(2, "HSS");
+      pstmt.setInt(1, 6);
+      pstmt.setString(2, "LMS");
       pstmt.setString(3, "professor");
 
       result=pstmt.executeUpdate();
