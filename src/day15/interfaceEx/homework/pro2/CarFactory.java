@@ -1,7 +1,5 @@
 package day15.interfaceEx.homework.pro2;
 
-;
-
 public class CarFactory extends Factory implements IWorkingTogether {
 
   public CarFactory(String name, int opeHour, int closeHour) {
@@ -17,9 +15,9 @@ public class CarFactory extends Factory implements IWorkingTogether {
       case 'B':
         return super.getWorkingTime() * 2;
       case 'c':
-        return super.getWorkingTime() * 1;
+        return super.getWorkingTime();
       default:
-        return super.getWorkingTime() * 0;
+        return 0;
     }
   }
 
