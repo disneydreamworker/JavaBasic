@@ -16,53 +16,8 @@ public class JdbcEx {
   static String password = "0000";
 
   public static void main(String[] args) {
-    memberInsert();
-    memberUpdate();
-    memberDelete();
-    memberSelect();
     mySqlConnection();
   }
-
-  private static void memberSelect() {
-
-  }
-
-  private static void memberDelete() {
-  }
-
-  private static void memberUpdate() {
-  }
-
-  private static void memberInsert() {
-    ResultSet rs = null;
-    Connection con = null;
-    PreparedStatement pstmt = null;
-
-    String query = "insert into member values(?,?,?)";
-    int result = 0;
-
-    try {
-//      Class.forName("com.mysql.cj.jdbc.Driver");
-      con = DriverManager.getConnection(url,userName,password);
-      System.out.println(con);
-      pstmt = con.prepareStatement(query);
-      pstmt.setInt(1, 6);
-      pstmt.setString(2, "LMS");
-      pstmt.setString(3, "professor");
-
-      result=pstmt.executeUpdate();
-      if(result==1){
-        System.out.println("학원정보가 업데이트 되었습니다.");
-      } else if (result==0){
-        System.out.println("회원 정보 입력이 실패하였습니다.");
-      }
-      pstmt.close();
-      con.close();
-    } catch (SQLException e) {
-      throw new RuntimeException(e);
-    }
-  }
-
   public static void mySqlConnection() {
     String query = "SELECT * FROM member";
     try {
