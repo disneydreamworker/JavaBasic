@@ -1,4 +1,4 @@
-package day17.exception.exceptionTest;
+package day17.exception.exceptionmorningtest;
 
 import java.util.Scanner;
 //BufferedReader(new InputStreamReader(System.in)) 사용하셔도 됩니다.

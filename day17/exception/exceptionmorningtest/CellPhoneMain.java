@@ -1,4 +1,4 @@
-package day17.exception.exceptionTest;
+package day17.exception.exceptionmorningtest;
 
 public class CellPhoneMain {
 
