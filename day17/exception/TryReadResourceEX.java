@@ -3,7 +3,7 @@ package day17.exception;
 public class TryReadResourceEX {
 
   public static void main(String[] args) {
-    try (MyResource myResource = new MyResource("김수한무한도전광석화");
+    try (MyResource myResource = new MyResource("김수한무한도전광석화")
 
     ){
       String data = myResource.readOne();
