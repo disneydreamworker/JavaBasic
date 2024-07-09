@@ -29,8 +29,10 @@ public class Prob1 {
 
     while(st.hasMoreTokens()) {arr.add(st.nextToken());}
 
-    String[] addr = arr.stream().toArray(String[]::new);
 
-    return addr;
+    String[] addr1 = arr.toArray(String[]::new);
+    String[] addr2 = arr.stream().toArray(String[]::new);
+
+    return addr1;
   }
 }
