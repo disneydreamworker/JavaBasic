@@ -1,6 +1,8 @@
 package day17.database.dbEx;
 
+
 import day17.database.dbEx.dbconf.ConnectionFactory;
+
 import day17.database.dbEx.vo.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +14,7 @@ public class SelectAllUser {
 
   static Connection connection = null;
   static ResultSet rs = null;
-  static ArrayList<User> userlist = new ArrayList<User>();
+  static ArrayList<User> userlist = new ArrayList<>();
 
   public static void main(String[] args) {
     String query = "SELECT * FROM users";
@@ -28,9 +30,8 @@ public class SelectAllUser {
         user.setUserName(rs.getString("username"));
         user.setUserAage(rs.getInt("userage"));
         user.setUserEmail(rs.getString("useremail"));
-        
-        userlist.add(user);
 
+        userlist.add(user);
       }
       for (User user : userlist) {
         System.out.println(user.getUserId() + " " + user.getUserName());

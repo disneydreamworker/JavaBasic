@@ -1,6 +1,8 @@
 package day17.database.dbEx.vo;
 
+
 public class User {
+
 
   private String userId;
   private String userName;
