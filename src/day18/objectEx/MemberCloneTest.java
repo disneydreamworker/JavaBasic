@@ -21,6 +21,10 @@ public class MemberCloneTest {
 
 
 
+
+
+
+
      /* System.out.println(member1);
       System.out.println(member2);
 
