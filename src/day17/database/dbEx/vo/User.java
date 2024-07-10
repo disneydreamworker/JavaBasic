@@ -1,6 +1,24 @@
 package day17.database.dbEx.vo;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+/*@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
+@RequiredArgsConstructor*/
+//@Data는 위를 모두 포함한다
+@Data
+// public User(String id, String name, int age, String email) 생성자를 만들어준다
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class User {
 
 
@@ -9,7 +27,7 @@ public class User {
   private int userAage;
   private String userEmail;
 
-  public User() {
+/*  public User() {
   }
 
   public User(String id, String name, int age, String email) {
@@ -17,9 +35,9 @@ public class User {
     this.userName = name;
     this.userAage = age;
     this.userEmail = email;
-  }
+  }*/
 
-  public String getUserId() {
+/*  public String getUserId() {
     return userId;
   }
 
@@ -50,7 +68,6 @@ public class User {
   public void setUserEmail(String userEmail) {
     this.userEmail = userEmail;
   }
-
   @Override
   public String toString() {
     return "User{" +
@@ -59,5 +76,5 @@ public class User {
         ", userAage=" + userAage +
         ", userEmail='" + userEmail + '\'' +
         '}';
-  }
+  }*/
 }

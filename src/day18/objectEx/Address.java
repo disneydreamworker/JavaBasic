@@ -10,7 +10,6 @@ import lombok.Setter;
 public class Address implements Cloneable {
 
   private int code;
-
   private String addr;
 
   @Override

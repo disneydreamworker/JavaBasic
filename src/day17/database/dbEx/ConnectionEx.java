@@ -6,7 +6,7 @@ import java.sql.*;
 public class ConnectionEx {
 
   private static Connection connection = null;
-  private static String url = "jdbc:mysql://127.0.0.1:3306/ssgdatabase";
+  private static String url = "jdbc:mysql://localhost/ssgdatabase";
   private static String id = "root";
   private static String pwd = "1234";
 
@@ -35,8 +35,5 @@ public class ConnectionEx {
         }
       }
     }
-
   }
-
-
 }
