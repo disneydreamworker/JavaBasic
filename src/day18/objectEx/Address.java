@@ -9,8 +9,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Address implements Cloneable {
 
-  private int code;
-  private String addr;
+  private int code; //학번
+  private String addr; //주소
 
   @Override
   protected Object clone() throws CloneNotSupportedException {

@@ -17,7 +17,6 @@ public class Member implements Cloneable {
 
   @Override
   protected Member clone() throws CloneNotSupportedException {
-
     try {
       Object clonedAddress = addr.clone();
       Address addr = (Address) clonedAddress;

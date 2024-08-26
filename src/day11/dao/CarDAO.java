@@ -14,5 +14,4 @@ public class CarDAO {
     //DB연결 , select SQL
     System.out.println("car 정보가 조회 되었습니다. 모든 Car 객체 조회");
   }
-
 }

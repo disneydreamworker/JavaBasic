@@ -27,7 +27,7 @@ public class JdbcEx {
   private static void memberDelete() {
     String url = "jdbc:mysql://localhost:3306/employees";
     String userName = "root";
-    String password = "1234";
+    String password = "0000";
     String query = "DELETE FROM member where id = ? ";
 
     Connection con = null;
@@ -59,7 +59,7 @@ public class JdbcEx {
   private static void memberUpdate() {
     String url = "jdbc:mysql://localhost:3306/employees";
     String userName = "root";
-    String password = "1234";
+    String password = "0000";
     String query = "UPDATE member SET job = ? where id = ? ";
 
     Connection con = null;
@@ -93,7 +93,7 @@ public class JdbcEx {
   private static void memberInsert() {
     String url = "jdbc:mysql://localhost:3306/employees";
     String userName = "root";
-    String password = "1234";
+    String password = "0000";
     String query = "INSERT INTO member VALUES(?,?,?)";
 
     Connection con = null;
@@ -105,7 +105,7 @@ public class JdbcEx {
       con = DriverManager.getConnection(url, userName, password);
       System.out.println(con);
       pstmt = con.prepareStatement(query);
-      pstmt.setInt(1, 4);
+      pstmt.setInt(1, 10);
       pstmt.setString(2, "kss");
       pstmt.setString(3, "professor");
 
@@ -129,7 +129,7 @@ public class JdbcEx {
   public static void memberSearch() {
     String url = "jdbc:mysql://localhost:3306/employees";
     String userName = "root";
-    String password = "1234";
+    String password = "0000";
     String query = "SELECT * FROM member";
 
     Connection con = null;

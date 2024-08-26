@@ -6,7 +6,6 @@ public class MemberCloneTest {
     Member member1 = new Member("ssg", 30, new Address(10101, "서울시 영등포구"));
 
     try {
-
       Member member2 = member1.clone();
 
       Address address1 = member1.getAddr();
@@ -18,10 +17,6 @@ public class MemberCloneTest {
       System.out.printf("Member2 hashcode : %s, addr : %s\n", member2, member2.getAddr());
       System.out.printf("address1 hashcode : %s, addr : %s\n", address1, address1.getAddr());
       System.out.printf("address2 hashcode : %s, addr : %s\n", address2, address2.getAddr());
-
-
-
-
 
 
 
